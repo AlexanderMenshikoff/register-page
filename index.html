@@ -5,6 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration page</title>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container right-panel-active">
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">Зарегистрироваться</h2>
+          <input
+            type="tel"
+            placeholder="Телефон"
+            class="input-phone"
+            data-phone-pattern="+7 (___) ___-__-__"
+          />
+          <input type="password" placeholder="Пароль" class="input-password" />
+          <input
+            type="password"
+            placeholder="Повторите пароль"
+            class="input-password-repeat"
+          />
+          <button class="btn-signup">Зарегистрироваться</button>
+        </form>
+      </div>
+
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Войти</h2>
+          <input
+            type="tel"
+            placeholder="Телефон"
+            class="input-phone-signin"
+            data-phone-pattern="+7 (___) ___-__-__"
+          />
+          <input
+            type="password"
+            placeholder="Пароль"
+            class="input-password-signin"
+          />
+          <a href="#" class="link">Забыли пароль?</a>
+          <button class="btn-signin">Войти</button>
+        </form>
+      </div>
+
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Войти</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
